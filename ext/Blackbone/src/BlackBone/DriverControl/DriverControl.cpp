@@ -63,18 +63,7 @@ NTSTATUS DriverControl::Reload( std::wstring path /*= L"" */ )
     // Use default path
     if (path.empty())
     {
-        const wchar_t* filename = nullptr;
-
-        if (IsWindows10OrGreater())
-            filename = BLACKBONE_FILE_NAME_10;
-        else if (IsWindows8Point1OrGreater())
-            filename = BLACKBONE_FILE_NAME_81;
-        else if (IsWindows8OrGreater())
-            filename = BLACKBONE_FILE_NAME_8;
-        else if (IsWindows7OrGreater())
-            filename = BLACKBONE_FILE_NAME_7;
-        else
-            filename = BLACKBONE_FILE_NAME;
+        const wchar_t* filename = BLACKBONE_FILE_NAME;
 
         path = Utils::GetExeDirectory() + L"\\" + filename;
     }
