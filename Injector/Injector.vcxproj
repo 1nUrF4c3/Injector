@@ -99,9 +99,7 @@
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Message.hpp" />
     <ClInclude Include="Resource.h" />
-    <ClInclude Include="StdAfx.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Resource.rc" />

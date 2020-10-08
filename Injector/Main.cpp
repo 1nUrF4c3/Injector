@@ -3,8 +3,10 @@
 #include <Blackbone/src/BlackBone/Process/Process.h>
 #include <Blackbone/src/BlackBone/Misc/Utils.h>
 
-#include "StdAfx.hpp"
-#include "Message.hpp"
+#include <iostream>
+#include <Windows.h>
+#include <TlHelp32.h>
+
 #include "Resource.h"
 
 //=====================================================================================

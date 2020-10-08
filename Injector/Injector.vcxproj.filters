@@ -11,7 +11,5 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Resource.h" />
-    <ClInclude Include="Message.hpp" />
-    <ClInclude Include="StdAfx.hpp" />
   </ItemGroup>
 </Project>
