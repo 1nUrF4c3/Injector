@@ -29,7 +29,7 @@ bool Inject()
 
 	CopyMemory(pPayloadData, LockResource(LoadResource(GetModuleHandle(NULL), hResource)), dwPayloadSize);
 
-	return _process.mmap().MapImage(dwPayloadSize, pPayloadData, false, WipeHeader).status;
+	return _process.mmap().MapImage(dwPayloadSize, pPayloadData).status;
 }
 
 //=====================================================================================
